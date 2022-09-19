@@ -1,0 +1,38 @@
+.mainDelete{
+    display: flex;
+    flex-direction: column;
+}
+.Deletes{
+    width: 22rem;
+    border: 2px solid;
+    margin-left: 5rem;
+    height: 2.2rem;
+    box-shadow:1px 1px 3px 1px #e5e5e5;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: .3rem;
+}
+.delBox{
+    width: 22rem;
+    border: 2px solid;
+    margin-left: 5rem;
+    height: 2.5rem;
+    box-shadow:1px 1px 3px 1px #e5e5e5;
+    margin-top:2.2rem ;
+    background-color: gray;
+    display: flex;
+    justify-content: flex-end;
+}
+.type{
+    width:90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .text{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+  }
