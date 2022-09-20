@@ -8,14 +8,21 @@ body {
     color: #ABABF3;
 }
 
-.mainbody {
-  width: 1300px;
+.Mainbody .mainhead {
+  width: 100%;
 }
 .Main-display{
   overflow-y: scroll;
   overflow-x: hidden;
   height: 20rem;
   background-color: #eaece9;
+}
+.fa-rotate-right {
+  font-weight: 900;
+  height: 2.2rem;
+  box-shadow: 0px 2px 4px 1px #e5e5e5;
+  padding-right: 3px;
+  
 }
 .Main-display::-webkit-scrollbar{
   display: none;
@@ -30,6 +37,8 @@ body {
 .border {
   outline: inset;
   background-color: black;
+  width: 100%;
+  border-width: 0px;
 }
 
 .subheading {
@@ -49,6 +58,8 @@ body {
   flex-direction: row;
 }
 
+
+
 .Design {
   display: flex;
   justify-content: center;
@@ -58,7 +69,7 @@ body {
 
 .mainProgress {
   width: 340px;
-  
+  height: 400px;
   margin-left: 230px;
   
 }
@@ -96,15 +107,21 @@ i {
   padding-left: .3rem;
   padding-top: .3rem;
 }
-.fa-thin{
+.fa-plus{
   font-size: 32px;
   box-shadow: 0px 2px 4px 1px #e5e5e5;
+  background: #a5a5;
 }
-.fa-solid {
+.fa-trash {
   font-weight: 900;
-  height: 2.3rem;
+  height: 28px;
+  padding-top: 5px;
 }
-
+.fa-eraser{
+  font-weight: 900;
+    padding-top: 8px;
+    height: 32px;
+}
 .texting {
   display: flex;
   flex-direction: row;
@@ -137,24 +154,157 @@ i {
 }
 
 @media (max-width:1028px) {
-  .progessText {
-    width: 150px;
-
-  }
+  
 
   i {
     font-size: 20px;
-
     font-weight: 400;
-
     width: 2rem;
   }
 
+  .Mainbody .mainhead {
+    width: 100%;
+  }
   .check {
     width: 1.3rem;
     height: 1.3rem;
-    margin-top: .6rem;
-    margin-right: 10px;
-    border: inset 1px;
+  }
+  .mainhead {
+    font-size: 55px;
+  }
+  .subheading {
+    font-size: 23px;
+  }
+  .mainProgress {
+    width: 340px;
+    
+    margin-left: 115px;
+    
+  }
+  
+}
+@media (max-width:767px) {
+  
+  i {
+    font-size: 17px;
+    padding-top: 5px;
+    width: 1.7rem;
+  }
+  .fa-trash{
+    padding-right: 2px;
+    padding-top: 10px;
+  }
+  .Mainbody .mainhead {
+    width: 100%;
+  }
+  .check {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 12px;
+  }
+  .fa-eraser{
+    font-weight: 900;
+    padding-top: 13px;
+    height: 27px;
+  }
+  .mainhead {
+    font-size: 40px;
+  }
+  .subheading {
+    font-size: 19px;
+  }
+  .mainProgress {
+    width: 270px;
+    
+    margin-left: 65px;
+    height: 30px;
+  }
+  
+  
+}
+@media (max-width:480px) {
+  
+  i {
+    font-size: 14px;
+    padding-top: 5px;
+    width: 1.3rem;
+  }
+  .fa-trash{
+    padding-right: 2px;
+    padding-top: 13px;
+  }
+  .Mainbody .mainhead {
+    width: 100%;
+  }
+  .check {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 12px;
+  }
+  .fa-eraser{
+    font-weight: 900;
+    padding-top: 13px;
+    height: 27px;
+    background: #a5a5;
+  }
+  .mainhead {
+    font-size: 35px;
+  }
+  .subheading {
+    font-size: 19px;
+  }
+  .mainProgress {
+    margin-left: 58px;
+    width: 260px;
+    height: 320px;
+   
+  }
+  .contents{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 45px;
+    width: 395px;
+  }
+  .progessText{
+    background: #e5e5;
+  }
+  .Main-display {
+    height: 14.8rem;
+}
+}
+@media (max-width:440px) {
+  .contents{
+    margin-left: 35px;
+  }
+}
+@media (max-width:430px) {
+  .contents{
+    margin-left: 30px;
+  }
+}
+@media (max-width:410px) {
+  .contents{
+    margin-left: 25px;
+  }
+}
+@media (max-width:400px) {
+  .contents{
+    margin-left: 7px;
+  }
+}
+@media (max-width:390px) {
+  .contents{
+    margin-left: 5px;
+  }
+}
+@media (max-width:360px) {
+  .contents{
+    margin-left: 2px;
+  }
+}
+@media (max-width:300px) {
+  .contents{
+    margin-left: 0px;
   }
 }

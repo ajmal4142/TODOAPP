@@ -21,13 +21,22 @@ const Done = (props) => {
               return (
                 <div key={intex} className="donebox">
                   <div className="type">
-                    <p className="text">{obj.text}</p>
+                    <p className="text">
+                      <del>{obj.text}</del>
+                    </p>
                   </div>
                   <i
-                    onClick={() => {
+                    onClick={(e) => {
+                      let isdelete = window.confirm(
+                        `Deleting Ativity Permanently !!!!`
+                      );
+                      if (isdelete) {
+                        e.target.value = true;
+                      }
                       Deleted(obj);
                       console.log(obj);
                     }}
+                    id="trash"
                     className="fa-solid fa-trash"
                   ></i>
                 </div>

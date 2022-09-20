@@ -8,6 +8,9 @@ function App() {
     console.log(dels);
     setTodos(dels);
   };
+  const resetInputField = () => {
+    setTodo("");
+  };
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
   return (
@@ -37,10 +40,15 @@ function App() {
                     id: Date.now(),
                     text: todo,
                     status: false,
+                    statusrevive: false,
                   },
                 ])
               }
               className="fa-thin fa-plus"
+            ></i>
+            <i
+              onClick={resetInputField}
+              className="fa-sharp fa-solid fa-eraser"
             ></i>
           </div>
 
@@ -71,12 +79,17 @@ function App() {
                   />
                   <i
                     className="fa-solid fa-trash"
-                    onClick={() => {
+                    onClick={(e) => {
+                      let isdelete = window.confirm(
+                        "Deleting ToDo permanently !"
+                      );
+                      if (isdelete) {
+                        e.target.value = true;
+                      }
                       Delete(obj);
                       console.log(obj);
                     }}
                   ></i>
-                  <i className="fa-sharp fa-solid fa-pen-to-square"></i>
                 </div>
               );
             })}
